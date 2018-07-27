@@ -172,8 +172,8 @@ def get_new_data():
         data = fetch.fetch_data(s_url=api['url'], l_filter=api['filter'])
         raw_posts = parse_feed(data)
         # posts = munge_feed(raw_posts)
-        posts = filter_feed(raw_posts)
-        db_insert(posts)
+        # posts = filter_feed(raw_posts)
+        db_insert(raw_posts)
         time.sleep(1)
 
 
@@ -184,6 +184,9 @@ def get_lineup():
     # this each pages chooses items slightly differently
     # Assumption rank overrides draft?
     print("++++++++++++++\nIn get_lineup module ...")
+    # NEED CHECK HERE IF DB EXISTS, IF NOT GET NEW DATA ...
+    # NEED TO CHECK WITH OS FUNCTION
+    # import os.path  | os.path.isfile(fname) 
     db = TinyDB(cfg.config['db_name'])
     Record = Query()
     # get records that are 1. not in draft 2. not in rank list
@@ -196,7 +199,7 @@ def get_lineup():
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    lineup = [x for x in published][:18]
+    lineup = [x for x in published][:24]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:

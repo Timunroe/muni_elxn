@@ -16,7 +16,7 @@ def index():
 @app.route('/preview')
 def preview():
     template_data = {"posts": model.get_lineup()}
-    return render_template('preview.html', data=template_data)
+    return render_template('preview.html', data=template_data, data_names=cfg.config["candidates"])
 
 @app.route('/lineup', methods=['GET', 'POST'])
 def lineup():

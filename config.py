@@ -1,11 +1,11 @@
 config = {
     # could reduce db name to just project_name.json
     "project_name":
-    "ticats",
+    "muni_elxn",
     "name":
     "spec",
     "db_name":
-    "ticats.json",
+    "db.json",
     "db_fields_dflt": {
         'desc_user': '',
         'draft_user': 0,  # int 0:published, 1-2: draft
@@ -24,33 +24,215 @@ config = {
     "apis": [
         {
             "url":
-            'http://api.zuza.com/search/article/default?&category=sports&subcategory=ticats&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
-            "filter": ["searchResultView"]
-        },
-        {
-            "url":
-            'http://api.zuza.com/search/article/default?&category=sports&subcategory=football&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
-            "filter": ["searchResultView"]
-        },
-        {
-            "url":
-            'http://api.zuza.com/search/article/default?guid=346a9bb4-5f2b-4838-b632-4abcc516eeca&pageIndex=1&location=hamilton&sort=datedesc&pageSize=5&startindex=1&endindex=5',
-            "filter": ["searchResultView"]
-        },
-        {
-            "url":
-            'http://api.zuza.com/search/article/default?guid=ad33da77-38f2-42fc-ba36-392490bee98b&pageIndex=1&location=hamilton&sort=datedesc&pageSize=5&startindex=1&endindex=5',
+            'http://api.zuza.com/search/article/default?&category=news&subcategory=municipal-election&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
             "filter": ["searchResultView"]
         },
     ],
     "munge": [],
-    "section_list": ["Ticats", "CFL"],
-    "tag_list": ["BC", "CGY", "EDM", "MTL", "OTT", "TOR", "SSK", "WPG", "Opinion", "Gameday", "Profile", "Feature", "League"],
-    "schedule": [
-        {"name": "Week 1", "games": ["June 14: EDM 33 @ WPG 30", "June 15: TOR 19 @ SSK 27", "June 16: HAM 14 @ CGY 28", "June 16: MTL 10 @ BC 22"], "end": ""},
-        {"name": "Week 2", "games": ["June 21: SSK 17 @ OTT 40", "June 22: WPG 56 @ MTL 10", "June 22: HAM 38 @ EDM 21", "June 23: CGY 41 @ TOR 7"], "end": ""},
-        {"name": "Week 3", "games": ["June 28: OTT @ CGY 9pm", "June 29: WPG @ HAM 7pm", "June 29: BC @ EDM 10pm", "June 30: MTL @ SSK 9pm"], "end": ""},
-    ]
+    "candidates": {
+        "mayor": {
+            "link": "",
+            "people": [
+                {"name": "Jim Davis", "link": ""},
+                {"name": "Fred Eisenberger*", "link": ""},
+                {"name": "Paul Fromm", "link": ""},
+                {"name": "Henry Geissler", "link": ""},         
+                {"name": "Carlos Gomes", "link": ""},
+                {"name": "Edward Graydon", "link": ""},
+                {"name": "Todd May", "link": ""},
+                {"name": "Michael Pattison", "link": ""},
+                {"name": "Phil Ryerson", "link": ""},
+                {"name": "Ute Schmid-Jones", "link": ""},
+                {"name": "Vito Sgro", "link": ""},
+                {"name": "Ricky Tavares", "link": ""},
+                {"name": "Nathalie Xian Yi Yan", "link": ""},
+            ]
+        },
+        "wards": [
+            {
+                "title": "Ward 1", 
+                "link": "", 
+                "people": [
+                    {"name": "Jason Allen", "link": ""},
+                    {"name": "Sharon Anderson", "link": ""},
+                    {"name": "Syed Bakht", "link": ""},
+                    {"name": "Sharon Elizabeth Cole", "link": ""},
+                    {"name": "Ela Eroglu", "link": ""},
+                    {"name": "Sophie Geffros", "link": ""},
+                    {"name": "Richard Massie", "link": ""},
+                    {"name": "Lyla Miklos", "link": ""},
+                    {"name": "Linda Narducci", "link": ""},
+                    {"name": "Harrison White", "link": ""},
+                    {"name": "Maureen Wilson", "link": ""},
+                ]
+            },
+            {
+                "title": "Ward 2", 
+                "link": "", 
+                "people": [
+                    {"name": "Jason Farr*", "link": ""},
+                    {"name": "Cameron Kroetsch", "link": ""},
+                    {"name": "Nicole Smith", "link": ""},
+                    {"name": "Mark Tennant", "link": ""},
+                    {"name": "Suresh Venodh Daljeet", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 3", 
+                "link": "", 
+                "people": [
+                    {"name": "Milena Balta", "link": ""},
+                    {"name": "Keith Beck", "link": ""},
+                    {"name": "Alain Bureau", "link": ""},
+                    {"name": "Laura Farr", "link": ""},
+                    {"name": "Brendan Kavanaugh", "link": ""},
+                    {"name": "Tony Lemma", "link": ""},
+                    {"name": "Evelyn Myrie", "link": ""},
+                    {"name": "Nrinder Nann", "link": ""},
+                    {"name": "Amanda Salonen", "link": ""},
+                    {"name": "Dan Smith", "link": ""},                
+                    {"name": "Kristeen Sprague", "link": ""},
+                ]
+            },
+            {
+                "title": "Ward 4", 
+                "link": "", 
+                "people": [
+                    {"name": "Rod Douglas", "link": ""},
+                    {"name": "Sam Merulla*", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 5", 
+                "link": "", 
+                "people": [
+                    {"name": "Chad Collins*", "link": ""},
+                    {"name": "Stewart Klazinga", "link": ""},
+                    {"name": "Juanita Maldonado", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 6", 
+                "link": "", 
+                "people": [
+                    {"name": "Tom Jackson*", "link": ""},
+                    {"name": "Brad Young", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 7", 
+                "link": "", 
+                "people": [
+                    {"name": "Steve Benson", "link": ""},
+                    {"name": "Steve Clarke", "link": ""},
+                    {"name": "Kristopher Clowater", "link": ""},
+                    {"name": "Adam Dirani", "link": ""},
+                    {"name": "Karen Grice-Uggenti", "link": ""},
+                    {"name": "Joseph Kazubek", "link": ""},
+                    {"name": "Dan MacIntyre", "link": ""},
+                    {"name": "Jim McColl", "link": ""},
+                    {"name": "Geraldine McMullen", "link": ""},
+                    {"name": "Esther Pauls", "link": ""},
+                ]
+            },
+            {
+                "title": "Ward 8", 
+                "link": "", 
+                "people": [
+                    {"name": "Christopher Climie", "link": ""},
+                    {"name": "John-Paul Danko", "link": ""},
+                    {"name": "Steve Ruddick", "link": ""},
+                    {"name": "Anthony Simpson", "link": ""},
+                    {"name": "Colleen Wicken", "link": ""},
+                ]
+            },
+            {
+                "title": "Ward 9", 
+                "link": "", 
+                "people": [
+                    {"name": "Brad Clark", "link": ""},
+                    {"name": "Doug Conley*", "link": ""},
+                    {"name": "David Ford", "link": ""},
+                    {"name": "Cam Galindo", "link": ""},
+                    {"name": "Peter Lanza", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 10", 
+                "link": "", 
+                "people": [
+                    {"name": "Jeff Beattie", "link": ""},
+                    {"name": "Ian Thompson", "link": ""},
+                    {"name": "Maria Pearson*", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 11", 
+                "link": "", 
+                "people": [
+                    {"name": "Brenda Johnson*", "link": ""},
+                    {"name": "Waleed Shewayhat", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 12", 
+                "link": "", 
+                "people": [
+                    {"name": "Mike Bell", "link": ""},
+                    {"name": "Lloyd Ferguson*", "link": ""},
+                    {"name": "Miranda Reis", "link": ""},
+                    {"name": "John Scime", "link": ""},
+                    {"name": "<small>* incumbent</small>", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 13", 
+                "link": "", 
+                "people": [
+                    {"name": "Rich Gelder", "link": ""},
+                    {"name": "Kevin Gray", "link": ""},
+                    {"name": "Pamela Mitchell", "link": ""},
+                    {"name": "John Mykytyshyn", "link": ""},
+                    {"name": "Arlene Vanderbeek*", "link": ""},
+                    {"name": "* incumbent", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 14", 
+                "link": "", 
+                "people": [
+                    {"name": "Roslyn French-Sanges", "link": ""},
+                    {"name": "Robert Iszkula", "link": ""},
+                    {"name": "Vincent Samuel", "link": ""},
+                    {"name": "Terry Whitehead*", "link": ""},
+                    {"name": "Bryan Wilson", "link": ""},
+                    {"name": "* incumbent", "link": ""}
+                ]
+            },
+            {
+                "title": "Ward 15", 
+                "link": "", 
+                "people": [
+                    {"name": "Susan McKechnie", "link": ""},
+                    {"name": "Judi Partidge*", "link": ""},
+                    {"name": "* incumbent", "link": ""}
+                ]
+            },
+        ],
+        "trustees": {
+            "hwdsb": ["<b>Ward 1 and 2</b>: Christine Ann Bingham, Rahimuddin Chowdhury", "<b>Ward 3</b>: Chris Parkinson, Jocelynn Vieira, Livia Jones, Gail Tessier, Marlene A.S. Thomas", "<b>Ward 4</b>: Ray Mulholland", "<b>Ward 5</b>: Jason McLaughlin, Todd White", "<b>Ward 6</b>: Jay Edington, Kathy Archer, Eamon O’Donnell", "<b>Ward 7</b>: Dawn Danko", "<b>Ward 8 and 14</b>: George Kalacherry, Damin Starr", "<b>Ward 9 and 10</b>: Wayne Marston", "<b>Ward 11 and 12</b>: Blake Hambly, Alex Johnstone, Bruce Carnegie", "<b>Ward 13</b>: Noor Nizam, Sukhi Dhillon, Chris Parr", "<b>Ward 15</b>: Penny Deathe, Janet Creet"
+            ],
+            "hwcdsb": ["<b>Ward 1, 2 and 15</b>: Mark Valvasori", "<b>Ward 3 and 4</b>: Anthony Perri", "<b>Ward 5</b>: Aldo D’Intino, Ralph Agostino", "<b>Ward 6</b>: Joseph Baiardo, Elen Ranas, Ellen Agostino", "<b>Ward 7</b>: Patrick J. Daly", "<b>Ward 8 and 14</b>: John Valvasori", "<b>Ward 9 and 11</b>: Antonio (Tony) Di Mambro, Karmen Crea", "<b>Ward 10</b>: Mary Nardini", "<b>Ward 12 and 13</b>: Phil Homerski, Neil Chopp"],
+            "french": ["<b>Conseil Scolaire Catholique MonAvenir</b>", "Marcel Levesque", "<b>Conseil Scolaire Viamonde</b>", "Pierre Girouard"]
+        }
+    }
 }
 
 # BY KEYWORD

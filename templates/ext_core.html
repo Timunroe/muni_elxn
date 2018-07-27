@@ -18,10 +18,10 @@
     </article>
 {% endmacro %}
 
-{% include 'ext_ticats_stats.html' %}
-<hr>
-{% include 'ext_cfl_sked.html' %}
+{% include 'ext_core_header.html' %}
+
 <!-- CURATION LIST -->
+<h3 style="margin-top: 0.75rem; margin-bottom: 0;">Stories</h3>
 <section class="pica-cards">
     {%- for item in data['posts'] -%}
         {{ show_post(item) }}

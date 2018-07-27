@@ -7,7 +7,7 @@ import fetch
 import model
 import config as cfg
 
-# Put <script src="https://picabot.s3.amazonaws.com/pagejs/ticats_spec.js"></script> in DNN footer
+# Put <script src="https://picabot.s3.amazonaws.com/pagejs/XXXX_spec.js"></script> in DNN footer
 # put <div class="pica-results"></div> in DNN body
 
 
@@ -32,7 +32,7 @@ def build_template():
     # using Jinja2 string was fun, but let's get back to includes and other good stuff
     # html = Environment().from_string(tmpl.core_template).render(data=template_data)
     j2_env = Environment(loader=FileSystemLoader('templates'), trim_blocks=True)
-    html = j2_env.get_template('ext_core.html').render(data=template_data)
+    html = j2_env.get_template('ext_core.html').render(data=template_data, data_names=cfg.config["candidates"])
     html_minified = minify_html(html)
     css = fetch.fetch_css()
     script = Template(tmpl.script_template).substitute(css=css, minified=html_minified)
