@@ -41,10 +41,12 @@ config = {
                 {"name": "Edward Graydon", "link": ""},
                 {"name": "Todd May", "link": ""},
                 {"name": "Michael Pattison", "link": ""},
+                {"name": "George Rusich", "link": ""},
                 {"name": "Phil Ryerson", "link": ""},
                 {"name": "Ute Schmid-Jones", "link": ""},
                 {"name": "Vito Sgro", "link": ""},
                 {"name": "Ricky Tavares", "link": ""},
+                {"name": "Mark Wozny", "link": ""},
                 {"name": "Nathalie Xian Yi Yan", "link": ""},
             ]
         },
@@ -58,7 +60,9 @@ config = {
                     {"name": "Syed Bakht", "link": ""},
                     {"name": "Sharon Elizabeth Cole", "link": ""},
                     {"name": "Ela Eroglu", "link": ""},
+                    {"name": "Jordan Geertsma", "link": ""},
                     {"name": "Sophie Geffros", "link": ""},
+                    {"name": "Carol E. Lazich", "link": ""},
                     {"name": "Richard Massie", "link": ""},
                     {"name": "Lyla Miklos", "link": ""},
                     {"name": "Linda Narducci", "link": ""},
@@ -70,10 +74,13 @@ config = {
                 "title": "Ward 2", 
                 "link": "", 
                 "people": [
+                    {"name": "Diane Chiarelli", "link": ""},
                     {"name": "Jason Farr*", "link": ""},
                     {"name": "Cameron Kroetsch", "link": ""},
                     {"name": "Nicole Smith", "link": ""},
                     {"name": "Mark Tennant", "link": ""},
+                    {"name": "James Unsworth", "link": ""},
+                    {"name": "John Vail", "link": ""},
                     {"name": "Suresh Venodh Daljeet", "link": ""},
                     {"name": "<small>* incumbent</small>", "link": ""}
                 ]
@@ -85,11 +92,14 @@ config = {
                     {"name": "Milena Balta", "link": ""},
                     {"name": "Keith Beck", "link": ""},
                     {"name": "Alain Bureau", "link": ""},
+                    {"name": "Steven Paul Denault", "link": ""},
                     {"name": "Laura Farr", "link": ""},
                     {"name": "Brendan Kavanaugh", "link": ""},
+                    {"name": "Ned Kuruc", "link": ""},
                     {"name": "Tony Lemma", "link": ""},
                     {"name": "Evelyn Myrie", "link": ""},
                     {"name": "Nrinder Nann", "link": ""},
+                    {"name": "Stephen Rowe", "link": ""},
                     {"name": "Amanda Salonen", "link": ""},
                     {"name": "Dan Smith", "link": ""},                
                     {"name": "Kristeen Sprague", "link": ""},
@@ -119,6 +129,7 @@ config = {
                 "link": "", 
                 "people": [
                     {"name": "Tom Jackson*", "link": ""},
+                    {"name": "Timothy Taylor", "link": ""},
                     {"name": "Brad Young", "link": ""},
                     {"name": "<small>* incumbent</small>", "link": ""}
                 ]
@@ -137,12 +148,14 @@ config = {
                     {"name": "Jim McColl", "link": ""},
                     {"name": "Geraldine McMullen", "link": ""},
                     {"name": "Esther Pauls", "link": ""},
+                    {"name": "Roland Schneider", "link": ""},
                 ]
             },
             {
                 "title": "Ward 8", 
                 "link": "", 
                 "people": [
+                    {"name": "Eve Adams", "link": ""},
                     {"name": "Christopher Climie", "link": ""},
                     {"name": "John-Paul Danko", "link": ""},
                     {"name": "Steve Ruddick", "link": ""},
@@ -157,8 +170,8 @@ config = {
                     {"name": "Brad Clark", "link": ""},
                     {"name": "Doug Conley*", "link": ""},
                     {"name": "David Ford", "link": ""},
-                    {"name": "Cam Galindo", "link": ""},
                     {"name": "Peter Lanza", "link": ""},
+                    {"name": "Lakhwinder Singh Multani", "link": ""},
                     {"name": "<small>* incumbent</small>", "link": ""}
                 ]
             },
@@ -167,6 +180,7 @@ config = {
                 "link": "", 
                 "people": [
                     {"name": "Jeff Beattie", "link": ""},
+                    {"name": "Louie Milojevic", "link": ""},
                     {"name": "Ian Thompson", "link": ""},
                     {"name": "Maria Pearson*", "link": ""},
                     {"name": "<small>* incumbent</small>", "link": ""}
@@ -187,6 +201,7 @@ config = {
                 "people": [
                     {"name": "Mike Bell", "link": ""},
                     {"name": "Lloyd Ferguson*", "link": ""},
+                    {"name": "Kevin Marley", "link": ""},
                     {"name": "Miranda Reis", "link": ""},
                     {"name": "John Scime", "link": ""},
                     {"name": "<small>* incumbent</small>", "link": ""}
@@ -200,6 +215,7 @@ config = {
                     {"name": "Kevin Gray", "link": ""},
                     {"name": "Pamela Mitchell", "link": ""},
                     {"name": "John Mykytyshyn", "link": ""},
+                    {"name": "John Roberts", "link": ""},
                     {"name": "Arlene Vanderbeek*", "link": ""},
                     {"name": "* incumbent", "link": ""}
                 ]
@@ -227,10 +243,10 @@ config = {
             },
         ],
         "trustees": {
-            "hwdsb": ["<b>Ward 1 and 2</b>: Christine Ann Bingham, Rahimuddin Chowdhury", "<b>Ward 3</b>: Chris Parkinson, Jocelynn Vieira, Livia Jones, Gail Tessier, Marlene A.S. Thomas", "<b>Ward 4</b>: Ray Mulholland", "<b>Ward 5</b>: Jason McLaughlin, Todd White", "<b>Ward 6</b>: Jay Edington, Kathy Archer, Eamon O’Donnell", "<b>Ward 7</b>: Dawn Danko", "<b>Ward 8 and 14</b>: George Kalacherry, Damin Starr", "<b>Ward 9 and 10</b>: Wayne Marston", "<b>Ward 11 and 12</b>: Blake Hambly, Alex Johnstone, Bruce Carnegie", "<b>Ward 13</b>: Noor Nizam, Sukhi Dhillon, Chris Parr", "<b>Ward 15</b>: Penny Deathe, Janet Creet"
+            "hwdsb": ["<b>Ward 1 and 2</b>: Christine Ann Bingham, Rahimuddin Chowdhury", "<b>Ward 3</b>: Chris Parkinson, Jocelynn Vieira, Livia Jones, Gail Tessier, Marlene A.S. Thomas, Maria Felix Miller, Steven Paul Denault", "<b>Ward 4</b>: Ray Mulholland", "<b>Ward 5</b>: Jason McLaughlin, Todd White, Carole Paikin Miller", "<b>Ward 6</b>: Jay Edington, Kathy Archer, Eamon O’Donnell", "<b>Ward 7</b>: Dawn Danko", "<b>Ward 8 and 14</b>:, Damin Starr, Rochelle Butler, Erica Villabroza, Becky Buck", "<b>Ward 9 and 10</b>: Wayne Marston", "<b>Ward 11 and 12</b>: Blake Hambly, Alex Johnstone, Bruce Carnegie", "<b>Ward 13</b>: Noor Nizam, Sukhi Dhillon, Chris Parr, Paul Tut, Steven James Laur", "<b>Ward 15</b>: Penny Deathe, Janet Creet"
             ],
-            "hwcdsb": ["<b>Ward 1, 2 and 15</b>: Mark Valvasori", "<b>Ward 3 and 4</b>: Anthony Perri", "<b>Ward 5</b>: Aldo D’Intino, Ralph Agostino", "<b>Ward 6</b>: Joseph Baiardo, Elen Ranas, Ellen Agostino", "<b>Ward 7</b>: Patrick J. Daly", "<b>Ward 8 and 14</b>: John Valvasori", "<b>Ward 9 and 11</b>: Antonio (Tony) Di Mambro, Karmen Crea", "<b>Ward 10</b>: Mary Nardini", "<b>Ward 12 and 13</b>: Phil Homerski, Neil Chopp"],
-            "french": ["<b>Conseil Scolaire Catholique MonAvenir</b>", "Marcel Levesque", "<b>Conseil Scolaire Viamonde</b>", "Pierre Girouard"]
+            "hwcdsb": ["<b>Ward 1, 2 and 15</b>: Mark Valvasori", "<b>Ward 3 and 4</b>: Anthony Perri", "<b>Ward 5</b>: Aldo D’Intino, Ralph Agostino", "<b>Ward 6</b>: Joseph Baiardo, Ellen Agostino, Elen Ranas", "<b>Ward 7</b>: Patrick J. Daly", "<b>Ward 8 and 14</b>: John Valvasori, George Kalacherry", "<b>Ward 9 and 11</b>: Antonio (Tony) Di Mambro, Karmen Crea, Louis Agro, Tyler Iorio", "<b>Ward 10</b>: Mary Nardini", "<b>Ward 12 and 13</b>: Phil Homerski, Neil Chopp"],
+            "french": ["<b>Conseil Scolaire Catholique MonAvenir</b>", "Marcel Levesque", "<b>Conseil Scolaire Viamonde</b>", "Pierre Girouard, Denis S. Frawley"]
         }
     }
 }
