@@ -9,6 +9,7 @@ import time
 
 # ALL ABOUT THE DATA: ThIS MODULE TRANSFORMS DATA, DEALS WITH DATABASE
 
+
 def parse_feed(items):
     # input a list of dicts (ie fetched data from an api, rss)
     posts = []
@@ -26,7 +27,7 @@ def parse_feed(items):
             post['caption_api'] = ""
         # NOTE THIS FAILS IF NO SUBCATEGORIES, LIKE A STAFF STORY WITH JUST 'SPORTS'
         # USE CATEGORIES IN FEED INSTEAD?
-        if 'categoriesSubCategories' in item:    
+        if 'categoriesSubCategories' in item:
             post['categories_api'] = list(set([item for sublist in item['categoriesSubCategories'] for item in sublist.split('||')]))
         else:
             post['categories_api'] = ""
@@ -85,7 +86,7 @@ def parse_feed(items):
 
 
 def filter_feed(items):
-    new_list =[]
+    new_list = []
     m = re.compile('Ticats', flags=re.I)
     for item in items:
         # is 'Ticats' in 'categories_api'?
@@ -178,6 +179,8 @@ def get_new_data():
 
 
 def get_lineup():
+    # could this function return published or draft or deleted? Depending on passed parameter
+    # =====
     # how do we deal when draft/rank conflict?
     # At the moment, a ranked item set to draft
     # shows up in Lineup (by rank) without draft, AND on drafts page
@@ -186,20 +189,23 @@ def get_lineup():
     print("++++++++++++++\nIn get_lineup module ...")
     # NEED CHECK HERE IF DB EXISTS, IF NOT GET NEW DATA ...
     # NEED TO CHECK WITH OS FUNCTION
-    # import os.path  | os.path.isfile(fname) 
+    # import os.path  | os.path.isfile(fname)
     db = TinyDB(cfg.config['db_name'])
     Record = Query()
     # get records that are 1. not in draft 2. not in rank list
-    # lineup = {} this not needed as we are returning list, not dict of lists
     # get any records with rank not equal to 0
     rank_list = sorted(db.search(Record.rank != 0), key=itemgetter('rank'))
     # print(f"rank list is: {rank_list}")
-    # NOTE:
-    published = [x for x in is_draft(db.all(), False) if x['rank'] == 0]
+    published_list = [x
+                 for x in db.all()
+                 if x['rank'] == 0
+                 if x['draft_user'] == 0
+                 ]
+    published = sorted(published_list, key=itemgetter('pubdate_api'), reverse=True)
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    lineup = [x for x in published][:24]
+    lineup = published[:24]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:
@@ -314,9 +320,12 @@ def is_draft(val, condition=True):
 def get_drafts():
     db = TinyDB(cfg.config['db_name'])
     # Record = Query()
-    records = is_draft(db.all(), True)
+    records = [x
+               for x in db.all()
+               if x['draft_user'] > 0
+               ]
     db.close()
-    return records
+    return sorted(records, key=itemgetter('pubdate_api'), reverse=True)
 
 
 def set_draft(ids, status=True):
