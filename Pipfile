@@ -15,6 +15,7 @@ pylint = "*"
 yapf = "*"
 "flake8" = "*"
 "autopep8" = "*"
+ujson = "*"
 
 [dev-packages]
 yapf = "*"

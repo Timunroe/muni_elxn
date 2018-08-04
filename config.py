@@ -24,7 +24,7 @@ config = {
     "apis": [
         {
             "url":
-            'http://api.zuza.com/search/article/default?&category=news&subcategory=municipal-election&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=10',
+            'http://api.zuza.com/search/article/default?&category=news&subcategory=municipal-election&pageIndex=1&location=hamilton&sort=datedesc&pageSize=10&startindex=1&endindex=30',
             "filter": ["searchResultView"]
         },
     ],
