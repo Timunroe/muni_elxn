@@ -98,7 +98,6 @@ config = {
                 "title": "Ward 3",
                 "link": "",
                 "people": [
-<<<<<<< HEAD
                     {"name": "Milena Balta", "link": ""},
                     {"name": "Keith Beck", "link": ""},
                     {"name": "Alain Bureau", "link": ""},
@@ -112,22 +111,6 @@ config = {
                     {"name": "Amanda Salonen", "link": ""},
                     {"name": "Dan Smith", "link": ""},                
                     {"name": "Kristeen Sprague", "link": ""},
-=======
-                    {"name": "Milena Balta", "link": "", "img": ""},
-                    {"name": "Keith Beck", "link": "", "img": ""},
-                    {"name": "Alain Bureau", "link": "", "img": ""},
-                    {"name": "Steven Paul Denault", "link": "", "img": ""},
-                    {"name": "Laura Farr", "link": "", "img": ""},
-                    {"name": "Brendan Kavanaugh", "link": "", "img": ""},
-                    {"name": "Ned Kuruc", "link": "", "img": ""},
-                    {"name": "Tony Lemma", "link": "", "img": ""},
-                    {"name": "Evelyn Myrie", "link": "", "img": ""},
-                    {"name": "Nrinder Nann", "link": "", "img": ""},
-                    {"name": "Stephen Rowe", "link": "", "img": ""},
-                    {"name": "Amanda Salonen", "link": "", "img": ""},
-                    {"name": "Dan Smith", "link": "", "img": ""},
-                    {"name": "Kristeen Sprague", "link": "", "img": ""},
->>>>>>> 5eb3092de541a4612cdd7e72821776f97ba8bb90
                 ]
             },
             {
