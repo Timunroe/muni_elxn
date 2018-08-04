@@ -97,7 +97,6 @@ config = {
                     {"name": "Brendan Kavanaugh", "link": ""},
                     {"name": "Ned Kuruc", "link": ""},
                     {"name": "Tony Lemma", "link": ""},
-                    {"name": "Evelyn Myrie", "link": ""},
                     {"name": "Nrinder Nann", "link": ""},
                     {"name": "Stephen Rowe", "link": ""},
                     {"name": "Amanda Salonen", "link": ""},
@@ -211,6 +210,7 @@ config = {
                 "title": "Ward 13", 
                 "link": "", 
                 "people": [
+                    {"name": "Gaspare Bonomo"},
                     {"name": "Rich Gelder", "link": ""},
                     {"name": "Kevin Gray", "link": ""},
                     {"name": "Pamela Mitchell", "link": ""},
@@ -248,7 +248,13 @@ config = {
             "hwcdsb": ["<b>Ward 1, 2 and 15</b>: Mark Valvasori", "<b>Ward 3 and 4</b>: Anthony Perri", "<b>Ward 5</b>: Aldo D’Intino, Ralph Agostino", "<b>Ward 6</b>: Joseph Baiardo, Ellen Agostino, Elen Ranas", "<b>Ward 7</b>: Patrick J. Daly", "<b>Ward 8 and 14</b>: John Valvasori, George Kalacherry", "<b>Ward 9 and 11</b>: Antonio (Tony) Di Mambro, Karmen Crea, Louis Agro, Tyler Iorio", "<b>Ward 10</b>: Mary Nardini", "<b>Ward 12 and 13</b>: Phil Homerski, Neil Chopp"],
             "french": ["<b>Conseil Scolaire Catholique MonAvenir</b>", "Marcel Levesque", "<b>Conseil Scolaire Viamonde</b>", "Pierre Girouard, Denis S. Frawley"]
         }
-    }
+    },
+    # category -> section -> topic -> tags
+    #   DNN        'page'     
+    "categories": ["municipal election"],
+    "sections": ["Hamilton", "Burlington", "Niagara", "Haldimand"],
+    "topics": ["mayor", "wards", "school boards"],
+    "tags": ["Ward 1", "Ward 2", "Ward 3", "Ward 4", "Ward 5", "Ward 6", "Ward 7", "Ward 8", "Ward 9", "Ward 10", "Ward 11", "Ward 12", "Ward 13", "Ward 14", "Ward 15"]
 }
 
 # BY KEYWORD
