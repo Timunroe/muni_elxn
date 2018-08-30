@@ -19,9 +19,11 @@
             <div class="pica-tab-panel" data-tab="1">
                 <div style="display: flex; flex-wrap: wrap; margin-top: 6px; margin-left: -10px; margin-right: -10px;">
                     {% for person in data_names.mayor.people %}
-                    <div style="min-width: 230px; margin-bottom: 16px; margin-right: 10xp; margin-left: 10px;">
+                    <div style="min-width: 180px; margin-bottom: 16px; margin-right: 10xp; margin-left: 10px;">
                         {% if person.img %}
-                        <img src="{{person.img}}" alt="{{person.name}}" style="width: 75px; height: 75px; border-radius: 50%; float: left; margin-right: 16px; shape-outside: circle(50%);" />
+                        <img src="{{person.img}}" alt="{{person.name}}" style="width: 75px; height: 75px; border-radius: 50%; shape-outside: circle(50%);" />
+                        {% else %}
+                        <div style="width: 75px; height: 75px; border-radius: 50%; background-color: silver; shape-outside: circle(50%);"></div>
                         {% endif %}
                         <p style="margin: 0 0;">{{person.name}}</p>
                     </div>
