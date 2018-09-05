@@ -205,7 +205,7 @@ def get_lineup():
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    lineup = published[:24]
+    lineup = published[:33]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:
@@ -256,13 +256,13 @@ def parse_form(form_data, kind="list"):
                         # check if empty string
                         if item:
                             asset_id, field, new_value = item.split('__')
-                            print(f"++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++")
+                            # print(f'++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++')
                             db.update({field: int(new_value)}, Record.asset_id == asset_id)
                 else:
                     # check if empty string
                     if v:
                         asset_id, field, new_value = v.split('__')
-                        print(f"++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++")
+                        # print(f'++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++')
                         db.update({field: int(new_value)}, Record.asset_id == asset_id)
     else:
         # form data is coming from the 'item' page instead,
