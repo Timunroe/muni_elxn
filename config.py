@@ -46,7 +46,7 @@ config = {
                     "img": "http://media.zuza.com/0/7/07bb2cc5-c64b-4939-a918-2597ab9e0022/mayor_candidate_Edward_Graydon.jpg"},
                 {"name": "Todd May", "link": "", "img": ""},
                 {"name": "Michael Pattison", "link": "", "img": ""},
-                {"name": "George Rusich", "link": "", "img": ""},
+                {"name": "George Rusich", "link": "", "img": "http://media.zuza.com/0/a/0a76cb31-5884-46cf-9ef7-832153e92fa1/mayor_candidate_George_Rusich___300x200.jpg"},
                 {"name": "Phil Ryerson", "link": "",
                     "img": "http://media.zuza.com/a/e/ae228af1-457d-4bbb-b1db-8e5e16d5237e/mayor_candidate_Phil_Ryerson.jpg"},
                 {"name": "Ute Schmid-Jones", "link": "",
