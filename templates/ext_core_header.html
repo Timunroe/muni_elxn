@@ -1,7 +1,11 @@
 <!--STATS HEADER START-->
 <p>Hamilton residents go to the polls Oct. 22 to elect a mayor, city councillors and school board trustees.</p></p>
 <h3 style="margin-top: 0;">Candidates by ward</h3>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/d/embed?mid=1DuiFNp6wHTx5aWF3AzQ-dXqZpT_fb0Le' width='600' height='450' frameborder='0' style='border:0'></iframe></div>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<iframe width="800" height="600" frameborder='0' style='border:0' src="https://www.arcgis.com/apps/MapSeries/index.html?appid=3a22acee83294046a8bc5a43f3fa49da"></iframe>
+<!--<div class='embed-container'><iframe src='https://www.google.com/maps/d/embed?mid=1DuiFNp6wHTx5aWF3AzQ-dXqZpT_fb0Le' width='600' height='450' frameborder='0' style='border:0'></iframe></div>-->
+
 <h3 style="margin-top: 0.75rem; margin-bottom: 0.25rem;">Lists of who&#8217;s running</h3>
 <section id="stats_header" style="margin-bottom: 0.5rem; margin-top: 0.75rem;" class="">
     <p style="margin-bottom: 0.35rem; font-size: 1.1rem;"></p>
@@ -25,7 +29,11 @@
                         {% else %}
                         <div style="width: 75px; height: 75px; border-radius: 50%; background-color: silver; shape-outside: circle(50%);"></div>
                         {% endif %}
-                        <p style="margin: 0 0;">{{person.name}}</p>
+                        <p style="margin: 0 0;">
+                            {% if person.link %}<a href="{{person.link}}" target="_blank">{% endif %}
+                            {{person.name}}
+                            {% if person.link %}</a>{% endif %}
+                        </p>
                     </div>
                     
                     {% endfor %}
@@ -42,7 +50,11 @@
                             <!-- <div style="display: flex; flex-wrap: wrap"> -->
                                 <!-- <div style="min-width: 180px; max-width: margin-bottom: 4px;"> -->
                                     {% for person in item.people %}
-                                    <p style="min-width: 180px; margin-bottom: 8px; margin-top: 8px;">{{person.name|safe}}</p>
+                                    <p style="min-width: 180px; margin-bottom: 8px; margin-top: 8px;">
+                                        {% if person.link %}<a href="{{person.link}}" target="_blank">{% endif %}
+                                        {{person.name|safe}}
+                                        {% if person.link %}</a>{% endif %}
+                                    </p>
                                     {% endfor %}
                                 <!-- </div> -->
                             <!-- </div> -->

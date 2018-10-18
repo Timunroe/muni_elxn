@@ -205,7 +205,7 @@ def get_lineup():
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    lineup = published[:33]
+    lineup = published[:37]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:

@@ -36,22 +36,22 @@ config = {
                 # NA http://media.zuza.com/8/8/88762817-369c-472b-83ad-02346de2b733/na.png
                 {"name": "Jim Davis", "link": "",
                     "img": "http://media.zuza.com/a/f/af3c8c9b-7010-43df-a2f2-341a81d7c5b2/mayor_candidate_Jim_Davis.jpg"},
-                {"name": "Fred Eisenberger*", "link": "",
+                {"name": "Fred Eisenberger*", "link": "https://www.thespec.com/opinion-story/8916986-fred-eisenberger-mayoral-candidate/",
                     "img": "http://media.zuza.com/d/5/d5bf4879-6cc2-492d-b5e9-06e23bcaa44b/mayor_candidate_Fred_Eisenberger.jpg"},
-                {"name": "Paul Fromm", "link": "",
+                {"name": "Paul Fromm", "link": "https://www.thespec.com/opinion-story/8959631-paul-fromm-hamilton-mayoral-candidate/",
                     "img": "http://media.zuza.com/7/d/7dc0baaf-81fc-4b82-b61b-2d86fa435fa3/mayor_candidate_Paul_Fromm_Star.jpg"},
-                {"name": "Henry Geissler", "link": "", "img": ""},
+                {"name": "Henry Geissler", "link": "https://www.thespec.com/opinion-story/8935620-henry-geissler-candidate-for-hamilton-mayor/", "img": "http://media.zuza.com/b/b/bba0ccbf-5e0e-424c-adf9-fd9231d6d547/mayor_canadidate_Henry_Geissler.jpg"},
                 {"name": "Carlos Gomes", "link": "", "img": ""},
                 {"name": "Edward Graydon", "link": "",
                     "img": "http://media.zuza.com/0/7/07bb2cc5-c64b-4939-a918-2597ab9e0022/mayor_candidate_Edward_Graydon.jpg"},
                 {"name": "Todd May", "link": "", "img": ""},
-                {"name": "Michael Pattison", "link": "", "img": "http://media.zuza.com/c/f/cfa7b4c1-5e68-4a52-97c7-a7b46bf181e9/mayor_candidate_Michael_Pattison___Thumbnail.jpg"},
+                {"name": "Michael Pattison", "link": "https://www.thespec.com/opinion-story/8969377-michael-a-pattison-candidate-for-hamilton-mayor/", "img": "http://media.zuza.com/e/3/e3d3ffe1-a1e7-40b1-a2ee-1f3483e1ca7b/B88411555Z.1_20181016151158_000_GO9C4K9S.2-0_Thumbnail.jpg"},
                 {"name": "George Rusich", "link": "", "img": "http://media.zuza.com/0/a/0a76cb31-5884-46cf-9ef7-832153e92fa1/mayor_candidate_George_Rusich___300x200.jpg"},
                 {"name": "Phil Ryerson", "link": "",
                     "img": "http://media.zuza.com/a/e/ae228af1-457d-4bbb-b1db-8e5e16d5237e/mayor_candidate_Phil_Ryerson.jpg"},
                 {"name": "Ute Schmid-Jones", "link": "",
                     "img": "http://media.zuza.com/1/0/10d8eeed-5716-474b-bfa7-b0b73eb94307/mayor_candidate_Ute_Schmid-Jones.jpg"},
-                {"name": "Vito Sgro", "link": "",
+                {"name": "Vito Sgro", "link": "https://www.thespec.com/opinion-story/8959620-vito-sgro-hamilton-mayoral-candidate/",
                     "img": "http://media.zuza.com/1/f/1fd6f5be-2ffe-401a-9237-5f2f037f0c3a/mayor_candidate_Vito_Sgro.jpg"},
                 {"name": "Ricky Tavares", "link": "", "img": ""},
                 {"name": "Mark Wozny", "link": "", "img": ""},
@@ -62,9 +62,10 @@ config = {
         "wards": [
             {
                 "title": "Ward 1",
-                "link": "",
+                "bios": "https://www.thespec.com/news-story/8891703-ward-1-information-for-hamilton-voters/",
+                "issues": "https://www.thespec.com/news-story/8907503-ward-1-election-issues/",
                 "people": [
-                    {"name": "Jason Allen", "link": "", "img": ""},
+                    {"name": "Jason Allen", "link": "https://www.thespec.com/opinion-story/8959625-jason-allen-hamilton-ward-1-candidate/", "img": ""},
                     {"name": "Sharon Anderson", "link": "", "img": ""},
                     {"name": "Syed Bakht", "link": "", "img": ""},
                     {"name": "Sharon Elizabeth Cole", "link": "", "img": ""},
@@ -81,7 +82,8 @@ config = {
             },
             {
                 "title": "Ward 2",
-                "link": "",
+                "bios": "https://www.thespec.com/news-story/8894752-ward-2-information-for-hamilton-voters/",
+                "issues": "https://www.thespec.com/news-story/8910104-ward-2-election-issues/",
                 "people": [
                     {"name": "Diane Chiarelli", "link": "", "img": ""},
                     {"name": "Jason Farr*", "link": "", "img": ""},
@@ -96,7 +98,8 @@ config = {
             },
             {
                 "title": "Ward 3",
-                "link": "",
+                "bios": "https://www.thespec.com/news-story/8894683-ward-3-information-for-hamilton-voters/",
+                "issues": "https://www.thespec.com/news-story/8915451-ward-3-election-issues/",
                 "people": [
                     {"name": "Milena Balta", "link": ""},
                     {"name": "Keith Beck", "link": ""},
@@ -138,7 +141,7 @@ config = {
                 "people": [
                     {"name": "Tom Jackson*", "link": "", "img": ""},
                     {"name": "Timothy Taylor", "link": "", "img": ""},
-                    {"name": "Brad Young", "link": "", "img": ""},
+                    {"name": "Brad Young", "link": "https://www.thespec.com/opinion-story/8970836-bradley-young-ward-6-candidate-in-hamilton/", "img": ""},
                     {"name": "<small>* incumbent</small>"}
                 ]
             },
@@ -154,7 +157,7 @@ config = {
                     {"name": "Joseph Kazubek", "link": "", "img": ""},
                     {"name": "Dan MacIntyre", "link": "", "img": ""},
                     {"name": "Jim McColl", "link": "", "img": ""},
-                    {"name": "Geraldine McMullen", "link": "", "img": ""},
+                    {"name": "Geraldine McMullen", "link": "https://www.thespec.com/opinion-story/8969410-geraldine-mcmullen-ward-7-council-candidate/", "img": ""},
                     {"name": "Esther Pauls", "link": "", "img": ""},
                     {"name": "Roland Schneider", "link": "", "img": ""},
                 ]
