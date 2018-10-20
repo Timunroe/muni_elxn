@@ -38,8 +38,9 @@ def parse_feed(items):
         else:
             post['link'] = 'https://www.thespec.com/news-story/' + \
                 item['assetId'] + '-' + item['titleAlias'] + '/'
-        if 'superPortraitUrl' in item:
-            post['img_api'] = item['superPortraitUrl']
+        # superPortraitUrl
+        if 'image300x200Url' in item:
+            post['img_api'] = item['image300x200Url']
         else:
             post['img_api'] = ""
         if 'image150x100Url' in item:
@@ -205,7 +206,7 @@ def get_lineup():
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
-    lineup = published[:37]
+    lineup = published[:45]
     # print(f"Lineup spec is: {lineup['spec']}")
     # need to insert items from rank list
     for item in rank_list:
