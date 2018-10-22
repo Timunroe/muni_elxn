@@ -26,6 +26,8 @@
         <!--TABS PANELS START-->
         <div class="pica-tab-panels pica-sans-serif">
             <div class="pica-tab-panel" data-tab="1">
+                <p style="margin-top: 8px; margin-bottom: 16px;">Click to read about mayoral <a href="{{data_names.mayor.bios}}"><b>candidates</b></a> and <a href="{{data_names.mayor.issues}}"><b>issues</b></a>.</p>
+
                 <div style="display: flex; flex-wrap: wrap; margin-top: 6px; margin-left: -10px; margin-right: -10px;">
                     {% for person in data_names.mayor.people %}
                     <div style="min-width: 160px; margin-bottom: 16px; margin-right: 10xp; margin-left: 10px;">
@@ -47,13 +49,13 @@
             </div>
             <div class="pica-tab-panel" data-tab="2">
                 <div style="display: flex; flex-wrap: wrap; margin: 0px -10px;">
-                    
                     {% for item in data_names.wards %}
                     <div style="min-width: 280px; flex-grow: 1; margin: 0px 10px;">
                         <button style="font-weight: 600; font-size: 16px;" class="pica-accordion">{{item.title}}</button>
                         <div class="pica-panel">
                             <!-- <div style="display: flex; flex-wrap: wrap"> -->
                                 <!-- <div style="min-width: 180px; max-width: margin-bottom: 4px;"> -->
+                                    <p style="width: 180px; margin-top: 12px; margin-bottom: 12px;">Click to read about <a href="{{item.bios}}"><b>candidates</b></a> and <a href="{{item.issues}}"><b>issues</b></a>.</p>
                                     {% for person in item.people %}
                                     <p style="min-width: 180px; margin-bottom: 8px; margin-top: 8px;">
                                         {% if person.link %}<a href="{{person.link}}" target="_blank">{% endif %}

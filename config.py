@@ -31,7 +31,8 @@ config = {
     "munge": [],
     "candidates": {
         "mayor": {
-            "link": "",
+            "bios": "/news-story/8894782-mayor-race-information-for-hamilton-voters/",
+            "issues": "/news-story/8975425-what-will-your-mayoral-candidate-do-/",
             "people": [
                 # NA http://media.zuza.com/8/8/88762817-369c-472b-83ad-02346de2b733/na.png
                 {"name": "Jim Davis", "link": "",
@@ -62,8 +63,8 @@ config = {
         "wards": [
             {
                 "title": "Ward 1",
-                "bios": "https://www.thespec.com/news-story/8891703-ward-1-information-for-hamilton-voters/",
-                "issues": "https://www.thespec.com/news-story/8907503-ward-1-election-issues/",
+                "bios": "/news-story/8891703-ward-1-information-for-hamilton-voters/",
+                "issues": "/news-story/8907503-ward-1-election-issues/",
                 "people": [
                     {"name": "Jason Allen", "link": "https://www.thespec.com/opinion-story/8959625-jason-allen-hamilton-ward-1-candidate/", "img": ""},
                     {"name": "Sharon Anderson", "link": "", "img": ""},
@@ -82,8 +83,8 @@ config = {
             },
             {
                 "title": "Ward 2",
-                "bios": "https://www.thespec.com/news-story/8894752-ward-2-information-for-hamilton-voters/",
-                "issues": "https://www.thespec.com/news-story/8910104-ward-2-election-issues/",
+                "bios": "/news-story/8894752-ward-2-information-for-hamilton-voters/",
+                "issues": "/news-story/8910104-ward-2-election-issues/",
                 "people": [
                     {"name": "Diane Chiarelli", "link": "", "img": ""},
                     {"name": "Jason Farr*", "link": "", "img": ""},
@@ -98,8 +99,8 @@ config = {
             },
             {
                 "title": "Ward 3",
-                "bios": "https://www.thespec.com/news-story/8894683-ward-3-information-for-hamilton-voters/",
-                "issues": "https://www.thespec.com/news-story/8915451-ward-3-election-issues/",
+                "bios": "/news-story/8894683-ward-3-information-for-hamilton-voters/",
+                "issues": "/news-story/8915451-ward-3-election-issues/",
                 "people": [
                     {"name": "Milena Balta", "link": ""},
                     {"name": "Keith Beck", "link": ""},
@@ -118,7 +119,8 @@ config = {
             },
             {
                 "title": "Ward 4",
-                "link": "",
+                "bios": "/news-story/8893750-ward-4-information-for-hamilton-voters/",
+                "issues": "/news-story/8920382-ward-4-election-issues/",
                 "people": [
                     {"name": "Rod Douglas", "link": "", "img": ""},
                     {"name": "Sam Merulla*", "link": "", "img": ""},
@@ -127,7 +129,8 @@ config = {
             },
             {
                 "title": "Ward 5",
-                "link": "",
+                "bios": "/news-story/8926164-ward-5-election-issues/",
+                "issues": "/news-story/8893796-ward-5-information-for-hamilton-voters/",
                 "people": [
                     {"name": "Chad Collins*", "link": "", "img": ""},
                     {"name": "Stewart Klazinga", "link": "", "img": ""},
@@ -137,7 +140,8 @@ config = {
             },
             {
                 "title": "Ward 6",
-                "link": "",
+                "bios": "/news-story/8893830-ward-6-information-for-hamilton-voters/",
+                "issues": "/news-story/8931216-ward-6-election-issues-rope-rescues-and-high-speed-chases/",
                 "people": [
                     {"name": "Tom Jackson*", "link": "", "img": ""},
                     {"name": "Timothy Taylor", "link": "", "img": ""},
@@ -147,7 +151,8 @@ config = {
             },
             {
                 "title": "Ward 7",
-                "link": "",
+                "bios": "/news-story/8894617-ward-7-information-for-hamilton-voters/",
+                "issues": "/news-story/8936129-ward-7-election-issues/",
                 "people": [
                     {"name": "Steve Benson", "link": "", "img": ""},
                     {"name": "Steve Clarke", "link": "", "img": ""},
@@ -164,7 +169,8 @@ config = {
             },
             {
                 "title": "Ward 8",
-                "link": "",
+                "bios": "/news-story/8894589-ward-8-information-for-hamilton-voters/",
+                "issues": "/news-story/8941240-ward-8-election-issues/",
                 "people": [
                     {"name": "Eve Adams", "link": "", "img": ""},
                     {"name": "Christopher Climie", "link": "", "img": ""},
@@ -176,7 +182,8 @@ config = {
             },
             {
                 "title": "Ward 9",
-                "link": "",
+                "bios": "/news-story/8894196-ward-9-information-for-hamilton-voters/",
+                "issues": "/news-story/8946669-ward-9-election-issues/",
                 "people": [
                     {"name": "Brad Clark", "link": "", "img": ""},
                     {"name": "Doug Conley*", "link": "", "img": ""},
@@ -188,7 +195,8 @@ config = {
             },
             {
                 "title": "Ward 10",
-                "link": "",
+                "bios": "/news-story/8894195-ward-10-information-for-hamilton-voters/",
+                "issues": "/news-story/8950860-ward-10-election-issues/",
                 "people": [
                     {"name": "Jeff Beattie", "link": ""},
                     {"name": "Louie Milojevic", "link": ""},
@@ -199,7 +207,8 @@ config = {
             },
             {
                 "title": "Ward 11",
-                "link": "",
+                "bios": "/news-story/8894375-ward-11-information-for-hamilton-voters/",
+                "issues": "/news-story/8955399-ward-11-election-issues/",
                 "people": [
                     {"name": "Brenda Johnson*", "link": ""},
                     {"name": "Waleed Shewayhat", "link": ""},
@@ -208,7 +217,8 @@ config = {
             },
             {
                 "title": "Ward 12",
-                "link": "",
+                "bios": "/news-story/8894438-ward-12-information-for-hamilton-voters/",
+                "issues": "/news-story/8960707-ward-12-election-issues/",
                 "people": [
                     {"name": "Mike Bell", "link": "", "img": ""},
                     {"name": "Lloyd Ferguson*", "link": "", "img": ""},
@@ -220,7 +230,8 @@ config = {
             },
             {
                 "title": "Ward 13",
-                "link": "",
+                "bios": "/news-story/8894550-ward-13-information-for-hamilton-voters/",
+                "issues": "/news-story/8964616-ward-13-election-issues/",
                 "people": [
                     {"name": "Gaspare Bonomo"},
                     {"name": "Rich Gelder", "link": ""},
@@ -234,7 +245,8 @@ config = {
             },
             {
                 "title": "Ward 14",
-                "link": "",
+                "bios": "/news-story/8894506-ward-14-information-for-hamilton-voters/",
+                "issues": "/news-story/8970076-ward-14-election-issues/",
                 "people": [
                     {"name": "Roslyn French-Sanges", "link": "", "img": ""},
                     {"name": "Robert Iszkula", "link": "", "img": ""},
@@ -246,7 +258,8 @@ config = {
             },
             {
                 "title": "Ward 15",
-                "link": "",
+                "bios": "/news-story/8894395-ward-15-information-for-hamilton-voters/",
+                "issues": "/news-story/8974920-ward-15-election-issues/",
                 "people": [
                     {"name": "Susan McKechnie", "link": "", "img": ""},
                     {"name": "Judi Partridge*", "link": "", "img": ""},

@@ -22,19 +22,22 @@ def parse_feed(items):
         post['source_api'] = item['newsSource']
         post['tags_api'] = []
         if 'imageCaption' in item:
-            post['caption_api'] = smartypants.smartypants(item['imageCaption'].strip())
+            post['caption_api'] = smartypants.smartypants(
+                item['imageCaption'].strip())
         else:
             post['caption_api'] = ""
         # NOTE THIS FAILS IF NO SUBCATEGORIES, LIKE A STAFF STORY WITH JUST 'SPORTS'
         # USE CATEGORIES IN FEED INSTEAD?
         if 'categoriesSubCategories' in item:
-            post['categories_api'] = list(set([item for sublist in item['categoriesSubCategories'] for item in sublist.split('||')]))
+            post['categories_api'] = list(set(
+                [item for sublist in item['categoriesSubCategories'] for item in sublist.split('||')]))
         else:
             post['categories_api'] = ""
         post['desc_api'] = smartypants.smartypants(item['description'].strip())
         post['desc_api'] = " ".join(post['desc_api'].split())
         if item['contentType'] == 'ArticleBlogpost':
-            post['link'] = 'https://www.thespec.com/blogs/post/' + item['assetId'] + '-' + item['titleAlias'] + '/'
+            post['link'] = 'https://www.thespec.com/blogs/post/' + \
+                item['assetId'] + '-' + item['titleAlias'] + '/'
         else:
             post['link'] = 'https://www.thespec.com/news-story/' + \
                 item['assetId'] + '-' + item['titleAlias'] + '/'
@@ -48,7 +51,8 @@ def parse_feed(items):
         else:
             post['img_api_thumb'] = ""
         post['pubdate_api'] = item['publishFromDate']
-        post['timestamp'] = (arrow.get(item['publishFromDate'])).format('MM-DD h:mm a')
+        post['timestamp'] = (
+            arrow.get(item['publishFromDate'])).format('MM-DD h:mm a')
         post['site_api'] = item['newspaperName']
         post['author_api'] = item['authorName']
         if item['rootCategory'] == "opinion":
@@ -77,7 +81,8 @@ def parse_feed(items):
                 else:
                     if post['site_api']:
                         post['label_api'] += post['site_api']
-        post['label_api'] = post['label_api'].replace("The Hamilton Spectator", "The Spec").replace("Hamilton Spectator", "The Spec").replace("Toronto Star", "The Star")
+        post['label_api'] = post['label_api'].replace("The Hamilton Spectator", "The Spec").replace(
+            "Hamilton Spectator", "The Spec").replace("Toronto Star", "The Star")
         post['draft_api'] = False
         posts.append(post)
     # filter out duplicates (if dealing with multiple sources)
@@ -120,7 +125,8 @@ def munge_feed(items):
                         if action['action'] is 'set_key':
                             item[action['section']] = action['value']
                         if action['action'] is 'replace':
-                            item[key] = re.sub(action['target'], action['sub'], item[key])
+                            item[key] = re.sub(
+                                action['target'], action['sub'], item[key])
 
             new_list.append(item)
         return new_list
@@ -197,12 +203,12 @@ def get_lineup():
     # get any records with rank not equal to 0
     rank_list = sorted(db.search(Record.rank != 0), key=itemgetter('rank'))
     # print(f"rank list is: {rank_list}")
-    published_list = [x
-                 for x in db.all()
-                 if x['rank'] == 0
-                 if x['draft_user'] == 0
-                 ]
-    published = sorted(published_list, key=itemgetter('pubdate_api'), reverse=True)
+    published_list = [x for x in db.all()
+                      if x['rank'] == 0
+                      if x['draft_user'] == 0
+                      ]
+    published = sorted(published_list, key=itemgetter(
+        'pubdate_api'), reverse=True)
     # print(f"++++++++\nPublished list is:\n")
     # for z in published:
     # print(z['title_api'])
@@ -258,13 +264,15 @@ def parse_form(form_data, kind="list"):
                         if item:
                             asset_id, field, new_value = item.split('__')
                             # print(f'++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++')
-                            db.update({field: int(new_value)}, Record.asset_id == asset_id)
+                            db.update({field: int(new_value)},
+                                      Record.asset_id == asset_id)
                 else:
                     # check if empty string
                     if v:
                         asset_id, field, new_value = v.split('__')
                         # print(f'++++++++\nSetting this item: {asset_id} to {field}: {new_value}\n++++++++')
-                        db.update({field: int(new_value)}, Record.asset_id == asset_id)
+                        db.update({field: int(new_value)},
+                                  Record.asset_id == asset_id)
     else:
         # form data is coming from the 'item' page instead,
         # mutiple changes possible but only 1 asset affected
@@ -275,7 +283,8 @@ def parse_form(form_data, kind="list"):
                 post_update[x] = int(form_data_dict[x][0])
         for x in ['label_user', 'title_user', 'desc_user']:
             if form_data_dict[x][0] != '':
-                post_update[x] = smartypants.smartypants(form_data_dict[x][0].strip())
+                post_update[x] = smartypants.smartypants(
+                    form_data_dict[x][0].strip())
         print("Data to update:")
         print(post_update)
         db.update(post_update, Record.asset_id == asset_id)
@@ -292,7 +301,8 @@ def set_value(value_list, value):
         if item:
             asset_id, new_value = item.split('__')
             db.update({value: int(new_value)}, Record.asset_id == asset_id)
-            print(f"++++++++\nSetting this item: {asset_id} to {value}: {new_value}\n++++++++")
+            print(
+                f"++++++++\nSetting this item: {asset_id} to {value}: {new_value}\n++++++++")
     db.close()
     return
 
@@ -339,7 +349,8 @@ def set_draft(ids, status=True):
     for item_id in ids:
         if item_id:
             db.update({'draft_user': draft}, Record.asset_id == item_id)
-            print(f"++++++++\nSetting this item: {item_id} to status: {draft}\n++++++++")
+            print(
+                f"++++++++\nSetting this item: {item_id} to status: {draft}\n++++++++")
     db.close()
     return
 
